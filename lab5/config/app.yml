@@ -1,0 +1,5 @@
+database:
+  user: "root"
+  password: "76482544635"
+  host: "127.0.0.1"
+  database: "musuc_servise_itunes"
