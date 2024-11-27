@@ -1,0 +1,222 @@
+1. user
+GET
+all user
+http://127.0.0.1:5000/api/accounts
+
+one user by id
+http://127.0.0.1:5000/api/accounts/1
+
+POST 
+http://127.0.0.1:5000/api/accounts
+
+{
+  "username": "neuwujser",
+  "email": "newuser192@example.com",
+  "password": "password18723",
+  "gender": "M",
+  "birthdayDate": "1992-01-01"
+}
+
+PUT 
+http://127.0.0.1:5000/api/accounts/12
+
+{
+    "username": "updated_usern147ame",
+    "email": "updated_email12@example.com",
+    "password": "new_password123",
+    "gender": "M",
+    "birthdayDate": "1993-02-03"
+}
+
+DELETE
+
+http://127.0.0.1:5000/api/accounts/12
+
+
+2. song 
+
+GET
+all song
+
+http://127.0.0.1:5000/api/songs
+
+get one by id
+
+http://127.0.0.1:5000/api/songs/1
+
+POST
+
+http://127.0.0.1:5000/api/songs
+
+{
+"album_id": 2,
+"author_id": 2,
+"download_count": 20000,
+"downloads": 15000,
+"duraction": "00:04:00",
+"genre_id": 2,
+"label_id": 2,
+"price": 30,
+"realese_date": "2013-05-15",
+"song_id": 2,
+"song_title": "Gonduras",
+"text_of_song": "I`m born in Donduras sity Sambir around Lviv..."
+}
+
+PUT
+
+http://127.0.0.1:5000/api/songs/13
+
+{
+"album_id": 2,
+"author_id": 2,
+"download_count": 20000,
+"downloads": 15000,
+"duraction": "00:04:00",
+"genre_id": 2,
+"label_id": 2,
+"price": 30,
+"realese_date": "2013-05-15",
+"song_id": 2,
+"song_title": "Update",
+"text_of_song": "Update text..."
+}
+
+DELETE
+
+http://127.0.0.1:5000/api/songs/13
+
+
+3. playlist
+
+GET
+all
+http://127.0.0.1:5000/api/playlists
+
+one by id
+http://127.0.0.1:5000/api/playlists/1
+
+POST
+
+http://127.0.0.1:5000/api/playlists
+
+{
+    "count_of_song": 10,
+    "description": "Favorite Ukrainian songs 123",
+    "name_user_who_create": "user1789",
+    "playlist_id": 1,
+    "playlist_name": "My Ukrainian Hits47",
+    "song_id": 1,
+    "total_duration": "00:20:01",
+    "user_id": 1
+}
+
+PUT
+http://127.0.0.1:5000/api/playlists/6
+
+{
+    "count_of_song": 11,
+    "description": "update123",
+    "name_user_who_create": "lvivske1715",
+    "playlist_id": 1,
+    "playlist_name": "Update playlist",
+    "song_id": 1,
+    "total_duration": "00:20:01",
+    "user_id": 1
+}
+
+DELETE
+
+http://127.0.0.1:5000/api/playlists/6
+
+
+4. GENRE 
+GET 
+all
+http://127.0.0.1:5000/api/genres
+
+one by id 
+http://127.0.0.1:5000/api/genres/13
+
+
+POST
+http://127.0.0.1:5000/api/genres
+{
+    "country_of_genre": "test",
+    "genre_description": "test",
+    "genre_name": "Rock test",
+    "origin_year": 1970,
+    "ranking": 6
+}
+
+PUT
+http://127.0.0.1:5000/api/genres/31
+{
+    "country_of_genre": "Ukraine",
+    "genre_description": "the great ukrainuian rock",
+    "genre_name": "Rock 123",
+    "origin_year": 1970,
+    "ranking": 6
+}
+
+DELETE
+http://127.0.0.1:5000/api/genres/31
+
+5. userfavoroteartist
+
+GET
+all
+http://127.0.0.1:5000/api/favorites
+
+one by id
+http://127.0.0.1:5000/api/favorites/2
+
+POST
+http://127.0.0.1:5000/api/favorites
+
+{
+    "added_date": "2024-10-02",
+    "author_id": 2,
+    "comment": "Best rock band test",
+    "last_listen_date": "2024-10-05",
+    "listen_count": 100,
+    "user_id": 2
+}
+
+PUT
+{
+    "added_date": "2024-10-02",
+    "author_id": 2,
+    "comment": "Best rock band test123",
+    "last_listen_date": "2024-10-05",
+    "listen_count": 100,
+    "user_id": 2
+}
+
+DELETE
+http://127.0.0.1:5000/api/favorites/17
+
+
+more to more 
+userdownloads_has_song
+
+GET 
+all
+http://127.0.0.1:5000/api/userdownloads_has_songs
+
+one by id
+http://127.0.0.1:5000/api/userdownloads_has_songs/4/8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
